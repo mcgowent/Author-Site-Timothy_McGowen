@@ -9,11 +9,11 @@ Site for Timothy McGowen's Author websites.
 
 Fonts used from top to bottom:
 
-Author Name: Museo Sans 700 regualar, 79pt(7.9rems if the base font is set to 10pt).
-Nav Links: Museo Sans 700 regular, 31pt.
+Author Name: Museo Sans 700 regualar, 79pt(7.9rems if the base font is set to 10pt).&nbsp;
+Nav Links: Museo Sans 700 regular, 31pt.&nbsp;
 
-Experience bar text: Museo Sans 700 regular, 11pt.
-Experience % number: Museo Sans 700 regular, 27pt.
+Experience bar text: Museo Sans 700 regular, 11pt.&nbsp;
+Experience % number: Museo Sans 700 regular, 27pt.&nbsp;
 
 # Right Side Bar.
 
