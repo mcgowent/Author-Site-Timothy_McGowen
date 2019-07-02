@@ -16,3 +16,10 @@ Experience bar text: Museo Sans 700 regular, 11pt
 Experience % number: Museo Sans 700 regular, 27pt
 
 # Right Side Bar.
+
+Card Title Text: Museo Sans 900 Regular, 27pt
+Button Text: Museo Sans 500 regular, 22pt
+Inner Text: Museo Sans 500 regular, 15pt
+Disclaimer text: Museo Sans 900 regular, 8pt
+
+#Main-Content
