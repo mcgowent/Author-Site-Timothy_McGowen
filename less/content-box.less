@@ -1,8 +1,52 @@
 // ===================================Content-box==========================
 .content-box {
+    // Global Styles for the content section
+    background: @teal; //background color
+    .box-shadow(); //Box shadow to push the image and show the layers better
 
+    //This sets up the correct spacing for page 18px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    padding: 18px;
     // ===================================Main-box=============================
 
+    .main-box {
+        //Setting the styles for the main box inside the content-box, this section 
+        //should only contain the global styles for the box
+        .box-shadow();
+        background: @offWhite;
+        width: 596px;
+        height: auto;
+        padding: 18px;
+
+        // ===================================HomePage Boxes in order as they appear=============================
+
+        .welcome-box {
+            // background: red;
+            display: flex;
+
+            img {
+                width: 162.65px;
+                height: 162.65px;
+            }
+
+            div {
+                width: 369px;
+                padding: 18px;
+
+                h1 {
+                    color: @blue;
+                    font-size: 68px;
+                    font-family: 'Museo Sans 500';
+                }
+            }
+
+        }
+
+
+
+
+    }
 
     // ===================================aside-box============================
     .aside-box {
