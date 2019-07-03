@@ -136,6 +136,11 @@ html {
   max-width: 1000px;
   min-width: 1000px;
 }
+.line-break {
+  border-bottom: 1px solid #707070;
+  padding-top: 18px;
+  margin-bottom: 18px;
+}
 header {
   display: flex;
   flex-direction: column;
@@ -180,7 +185,7 @@ header .topnav .navbar button {
   opacity: 0.75;
   border-radius: 10px;
   margin: 0 8px;
-  box-shadow: 0 3px 6px #000000;
+  box-shadow: 0 2px 6px #000000;
 }
 header .topnav .navbar button:active {
   opacity: 1;
@@ -194,13 +199,13 @@ header .topnav .percents button {
 .content-box {
   display: flex;
   background: #315258;
-  box-shadow: 0 3px 6px #000000;
+  box-shadow: 0 2px 6px #000000;
   margin-top: 18px;
   margin-bottom: 18px;
   padding: 18px;
 }
 .content-box .main-box {
-  box-shadow: 0 3px 6px #000000;
+  box-shadow: 0 2px 6px #000000;
   background: #F8F8F8;
   width: 596px;
   height: auto;
@@ -215,12 +220,57 @@ header .topnav .percents button {
 }
 .content-box .main-box .welcome-box div {
   width: 369px;
-  padding: 18px;
+  padding-left: 18px;
+  font-family: 'Museo Sans 500';
 }
 .content-box .main-box .welcome-box div h1 {
   color: #2f3359;
   font-size: 68px;
+  padding-bottom: 5px;
+}
+.content-box .main-box .welcome-box div h2 {
+  color: #38211a;
+  font-size: 37px;
+  line-height: 1.2;
+  padding-top: 5px;
+}
+.content-box .main-box .chapter-offer .chapter-offer-title {
+  box-shadow: 0 2px 6px #000000;
+  height: 102.68px;
+  background: #315258;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.content-box .main-box .chapter-offer .chapter-offer-title h2 {
+  font-size: 25px;
   font-family: 'Museo Sans 500';
+  margin: 10px;
+}
+.content-box .main-box .chapter-offer .chapter-offer-title h1 {
+  font-size: 33px;
+  font-family: 'Museo Sans 700';
+  margin-top: 5px;
+}
+.content-box .main-box .chapter-offer .book-blurb {
+  display: flex;
+}
+.content-box .main-box .chapter-offer .book-blurb img {
+  box-shadow: 0 2px 6px #000000;
+  width: 162.12px;
+  height: 234.98px;
+  margin-right: 18px;
+}
+.content-box .main-box .chapter-offer .book-blurb div {
+  background: #315258;
+  padding: 22px;
+}
+.content-box .main-box .chapter-offer .book-blurb div p {
+  font-size: 14px;
+  font-family: 'Museo Sans 500';
+  margin-bottom: 18px;
 }
 .content-box .aside-box {
   width: 350px;
