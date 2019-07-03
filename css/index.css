@@ -184,6 +184,7 @@ header .navbar button:active {
   opacity: 1;
 }
 .content-box {
+  display: flex;
   background: #315258;
   box-shadow: 0 2px 6px #000000;
   margin-top: 18px;
@@ -260,21 +261,54 @@ header .navbar button:active {
 }
 .content-box .aside-box {
   width: 350px;
-  display: flex;
   flex-direction: column;
+  background: #F8F8F8;
+  text-align: center;
+  padding: 8px;
+  font-family: 'Museo-sans';
+  margin: 0 0 18px 18px;
 }
 .content-box .aside-box h2 {
   font-size: 2.7rem;
   font-weight: 900;
   text-align: center;
+  margin-top: 8px;
 }
 .content-box .aside-box img {
   width: 100px;
   height: 100px;
   text-align: center;
   margin: auto;
+  margin-top: 2rem;
 }
 .content-box .aside-box button {
   text-decoration: none;
-  width: 80%;
+  width: 300px;
+  height: 67px;
+  border: 1px solid #91413C;
+  border-radius: 10px;
+  background: #91413C;
+  font-size: 2.2rem;
+  color: white;
+  margin-top: 2rem;
+  text-align: center;
+}
+.content-box .aside-box form input {
+  margin-top: 1rem;
+  width: 300px;
+  height: 50px;
+  font-size: 1.5rem;
+}
+.content-box .aside-box p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.content-box .aside-box li {
+  font-size: 1.5rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+}
+.content-box .aside-box .recents {
+  text-align: left;
+  padding-left: 20px;
 }
