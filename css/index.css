@@ -130,3 +130,24 @@ html {
   font-size: 62.5%;
   margin: auto;
 }
+header {
+  background: darkred;
+}
+header h1 {
+  color: white;
+  font-size: 7.9rem;
+  text-align: center;
+}
+header .social-icons {
+  opacity: 0.75;
+  border: 1px solid red;
+  text-align: center;
+}
+header .navbar {
+  text-align: center;
+}
+header .navbar button {
+  text-decoration: none;
+  background: white;
+  border: 1px solid white;
+}
