@@ -172,3 +172,14 @@ header .navbar button {
 header .navbar button:active {
   opacity: 1;
 }
+.content-box .aside-box {
+  width: 100px;
+}
+.content-box .aside-box h2 {
+  font-size: 2.7rem;
+  font-weight: 900;
+}
+.content-box .aside-box img {
+  width: 100px;
+  height: 100px;
+}
