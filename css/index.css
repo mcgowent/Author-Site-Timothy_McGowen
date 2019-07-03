@@ -225,7 +225,8 @@ header .percents button {
 .content-box .main-box .welcome-box div {
   width: 369px;
   padding-left: 18px;
-  font-family: 'Museo Sans 500';
+  font-family: 'Museo-sans';
+  font-weight: 500;
 }
 .content-box .main-box .welcome-box div h1 {
   color: #2f3359;
@@ -250,12 +251,14 @@ header .percents button {
 }
 .content-box .main-box .chapter-offer .chapter-offer-title h2 {
   font-size: 25px;
-  font-family: 'Museo Sans 500';
+  font-family: 'Museo-sans';
+  font-weight: 500;
   margin: 10px;
 }
 .content-box .main-box .chapter-offer .chapter-offer-title h1 {
   font-size: 33px;
-  font-family: 'Museo Sans 700';
+  font-family: 'Museo-sans';
+  font-weight: 700;
   margin-top: 5px;
 }
 .content-box .main-box .chapter-offer .book-blurb {
@@ -273,7 +276,8 @@ header .percents button {
 }
 .content-box .main-box .chapter-offer .book-blurb div p {
   font-size: 14px;
-  font-family: 'Museo Sans 500';
+  font-family: 'Museo-sans';
+  font-weight: 500;
   margin-bottom: 18px;
 }
 .content-box .aside-box {
@@ -317,7 +321,7 @@ header .percents button {
   font-size: 1.5rem;
 }
 .content-box .aside-box p {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   margin-top: 1rem;
 }
 .content-box .aside-box li {
