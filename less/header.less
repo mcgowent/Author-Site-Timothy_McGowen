@@ -1,5 +1,8 @@
 header {
     background: darkred; 
+    display: flex; 
+    flex-direction: column;
+    padding-top: 15rem; 
 
     h1 {
         color: white;  
@@ -9,18 +12,36 @@ header {
 
     .social-icons {
         opacity: 0.75;
-        border: 1px solid red; 
         text-align: center; 
+        margin-top: 5rem; 
+        
+        a {
+            padding-left: 1.25rem; 
+        }
     }
 
     .navbar {
         text-align: center; 
+        margin-top: 5rem; 
 
         button {
             text-decoration: none; 
             background: white; 
             border: 1px solid white; 
+            font-size: 3.1rem; 
+            color: @teal; 
+            width: 129px; 
+            height: 96px; 
+            padding: 8px; 
+            opacity: 0.75; 
+            border-radius: 10px; 
+            margin: 0 8px ; 
+
+            &:active {
+                opacity: 1; 
+            }
         }
+
     }
 
 }
