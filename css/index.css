@@ -185,11 +185,15 @@ header .topnav .navbar button {
 header .topnav .navbar button:active {
   opacity: 1;
 }
-header .topnav .percents button {
+header .percents {
+  display: flex;
+}
+header .percents button {
   width: 350px;
   height: 100px;
   background: white;
   opacity: 0.75;
+  border: 1px solid white;
 }
 .content-box {
   display: flex;
