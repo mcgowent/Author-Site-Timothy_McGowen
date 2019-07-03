@@ -156,11 +156,18 @@ header .social-icons {
 header .social-icons a {
   padding-left: 1.25rem;
 }
-header .navbar {
+header .topnav {
+  display: flex;
+  justify-content: space-between;
+}
+header .topnav .navbar {
   text-align: center;
   margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
 }
-header .navbar button {
+header .topnav .navbar button {
   text-decoration: none;
   background: white;
   border: 1px solid white;
@@ -175,8 +182,14 @@ header .navbar button {
   margin: 0 8px;
   box-shadow: 0 3px 6px #000000;
 }
-header .navbar button:active {
+header .topnav .navbar button:active {
   opacity: 1;
+}
+header .topnav .percents button {
+  width: 350px;
+  height: 100px;
+  background: white;
+  opacity: 0.75;
 }
 .content-box {
   display: flex;
