@@ -173,13 +173,22 @@ header .navbar button:active {
   opacity: 1;
 }
 .content-box .aside-box {
-  width: 100px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
 }
 .content-box .aside-box h2 {
   font-size: 2.7rem;
   font-weight: 900;
+  text-align: center;
 }
 .content-box .aside-box img {
   width: 100px;
   height: 100px;
+  text-align: center;
+  margin: auto;
+}
+.content-box .aside-box button {
+  text-decoration: none;
+  width: 80%;
 }
