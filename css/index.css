@@ -130,3 +130,45 @@ html {
   font-size: 62.5%;
   margin: auto;
 }
+header {
+  background: darkred;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15rem;
+  font-family: 'museo-sans';
+}
+header h1 {
+  color: white;
+  font-size: 7.9rem;
+  text-align: center;
+  font-weight: 700;
+}
+header .social-icons {
+  opacity: 0.75;
+  text-align: center;
+  margin-top: 5rem;
+}
+header .social-icons a {
+  padding-left: 1.25rem;
+}
+header .navbar {
+  text-align: center;
+  margin-top: 5rem;
+}
+header .navbar button {
+  text-decoration: none;
+  background: white;
+  border: 1px solid white;
+  font-size: 3.1rem;
+  font-weight: 700;
+  color: #315258;
+  width: 129px;
+  height: 96px;
+  padding: 8px;
+  opacity: 0.75;
+  border-radius: 10px;
+  margin: 0 8px ;
+}
+header .navbar button:active {
+  opacity: 1;
+}
