@@ -181,8 +181,8 @@ header .navbar button:active {
 .content-box {
   background: #315258;
   box-shadow: 0 3px 6px #000000;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 18px;
+  margin-bottom: 18px;
   padding: 18px;
 }
 .content-box .main-box {
@@ -191,4 +191,20 @@ header .navbar button:active {
   width: 596px;
   height: auto;
   padding: 18px;
+}
+.content-box .main-box .welcome-box {
+  display: flex;
+}
+.content-box .main-box .welcome-box img {
+  width: 162.65px;
+  height: 162.65px;
+}
+.content-box .main-box .welcome-box div {
+  width: 369px;
+  padding: 18px;
+}
+.content-box .main-box .welcome-box div h1 {
+  color: #2f3359;
+  font-size: 68px;
+  font-family: 'Museo Sans 500';
 }
