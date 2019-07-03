@@ -127,11 +127,16 @@ table {
   border-spacing: 0;
 }
 html {
+  background: #38211a;
+}
+html {
   font-size: 62.5%;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1000px;
+  min-width: 1000px;
 }
 header {
-  background: darkred;
   display: flex;
   flex-direction: column;
   padding-top: 15rem;
@@ -167,8 +172,23 @@ header .navbar button {
   padding: 8px;
   opacity: 0.75;
   border-radius: 10px;
-  margin: 0 8px ;
+  margin: 0 8px;
+  box-shadow: 0 3px 6px #000000;
 }
 header .navbar button:active {
   opacity: 1;
+}
+.content-box {
+  background: #315258;
+  box-shadow: 0 3px 6px #000000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 18px;
+}
+.content-box .main-box {
+  box-shadow: 0 3px 6px #000000;
+  background: #F8F8F8;
+  width: 596px;
+  height: auto;
+  padding: 18px;
 }
