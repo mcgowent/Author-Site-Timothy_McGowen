@@ -128,8 +128,11 @@ table {
 }
 html {
   background: #38211a;
-}
-html {
+  background-image: url("/Author-Site-Timothy_McGowen/assets/img/background.png");
+  background-position: center top;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
   font-size: 62.5%;
   margin-right: auto;
   margin-left: auto;
