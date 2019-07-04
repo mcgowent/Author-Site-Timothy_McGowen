@@ -12,7 +12,7 @@
     // ===================================Main-box=============================
 
     .main-box {
-        //Setting the styles for the main box inside the content-box, this section 
+        //Setting the styles for the main box inside the content-box, this section
         //should only contain the global styles for the box
         .box-shadow();
         background: @offWhite;
@@ -21,7 +21,6 @@
         padding: 18px;
 
         // ===================================HomePage Boxes in order as they appear=============================
-
 
         // ============= Welcome Box ===========
         .welcome-box {
@@ -39,7 +38,6 @@
                 font-family: @font;
                 font-weight: 500;
 
-
                 h1 {
                     color: @blue;
                     font-size: 68px;
@@ -51,10 +49,8 @@
                     font-size: 37px;
                     line-height: 1.2;
                     padding-top: 5px;
-
                 }
             }
-
         }
 
         // ============= Read Free Chapter Box ===========
@@ -85,10 +81,7 @@
                     font-weight: 700;
 
                     margin-top: 5px;
-
                 }
-
-
             }
 
             .book-blurb {
@@ -96,28 +89,47 @@
 
                 img {
                     .box-shadow();
-
+                    width: 150%; //I'm having the hardest time getting this photo to act like I expect it to act.
+                    height: auto;
                     margin-right: 18px;
                 }
 
                 div {
+                    color: white;
                     background: @teal;
                     padding: 22px;
+
+                    font-family: @font;
+                    font-weight: 500;
+
+                    .box-shadow();
 
                     // Fix the spacing issue later and find out what is going on.
                     p {
                         // width: 327px;
-                        font-size: 14px;
-                        font-family: @font;
-                        font-weight: 500;
+                        font-size: 15px;
+
                         margin-bottom: 18px;
+                    }
+
+                    button {
+                        text-decoration: none;
+                        width: 300px;
+                        height: 67px;
+                        border: 1px solid @red;
+                        border-radius: 10px;
+                        background: @red;
+                        font-size: 2.2rem;
+                        color: white;
+                        margin-top: 2rem;
+                        text-align: center;
+
+                        .box-shadow();
+
                     }
                 }
             }
         }
-
-
-
     }
 
     // ===================================aside-box============================
@@ -129,7 +141,6 @@
         padding: 8px;
         font-family: @font;
         margin: 0 0 18px 18px;
-
 
         h2 {
             font-size: 2.7rem;
@@ -160,7 +171,6 @@
         }
 
         form {
-
             input {
                 margin-top: 1rem;
                 width: 300px;
@@ -170,7 +180,7 @@
         }
 
         p {
-            font-size: .8rem;
+            font-size: 0.8rem;
             margin-top: 1rem;
         }
 
