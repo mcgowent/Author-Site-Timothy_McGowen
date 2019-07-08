@@ -178,6 +178,7 @@ header .topnav .navbar {
 header .topnav .navbar button {
   text-decoration: none;
   background: white;
+  border: 1px solid white;
   font-size: 3.1rem;
   font-weight: 700;
   color: #315258;
@@ -194,19 +195,32 @@ header .topnav .navbar button:active {
 header .topnav .navbar button:last-child {
   width: 340px;
   background: #CBC0AD;
+  border: 1px solid #CBC0AD;
   color: white;
   opacity: 1;
+  padding: 0 15px;
 }
 header .topnav .navbar button:last-child p {
   font-size: 11px;
+  text-align: left;
+  margin-bottom: -6px;
+}
+header .topnav .navbar button:last-child .exp-tracker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .topnav .navbar button:last-child .exp-tracker h4 {
+  font-size: 27px;
 }
 header .topnav .navbar button:last-child .meter {
+  display: flex;
   height: 12px;
+  width: 240px;
   /* Can be anything */
   position: relative;
-  background: #555;
+  background: #ffffff;
   border-radius: 1px;
-  padding: 1px;
   box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
 }
 header .topnav .navbar button:last-child .meter > span {
