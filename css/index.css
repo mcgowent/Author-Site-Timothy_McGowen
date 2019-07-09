@@ -89,6 +89,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -131,7 +132,7 @@ a {
 }
 html {
   background: #38211a;
-  background-image: url("/assets/img/background.png");
+  background-image: url("../assets/img/background.png");
   background-position: center top;
   background-size: auto;
   background-repeat: no-repeat;
@@ -139,8 +140,6 @@ html {
   font-size: 62.5%;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1000px;
-  min-width: 1000px;
 }
 .line-break {
   border-bottom: 1px solid #707070;
@@ -148,10 +147,12 @@ html {
   margin-bottom: 18px;
 }
 header {
-  display: flex;
-  flex-direction: column;
+  display: block;
   padding-top: 15rem;
   font-family: 'museo-sans';
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 header h1 {
   color: white;
@@ -249,19 +250,25 @@ header .percents button {
   border: 1px solid white;
 }
 .content-box {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
   background: #315258;
   box-shadow: 0 1px 3px #00000069;
-  margin-top: 18px;
-  margin-bottom: 18px;
+  box-sizing: border-box;
   padding: 18px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 18px auto 0 auto;
 }
 .content-box .main-box {
   box-shadow: 0 1px 3px #00000069;
+  box-sizing: border-box;
   background: #F8F8F8;
-  width: 596px;
+  width: 100%;
   height: auto;
-  padding: 18px;
+  padding: 20px;
 }
 .content-box .main-box .welcome-box {
   display: flex;
@@ -278,7 +285,7 @@ header .percents button {
 }
 .content-box .main-box .welcome-box div h1 {
   color: #2f3359;
-  font-size: 68px;
+  font-size: 65px;
   padding-bottom: 5px;
 }
 .content-box .main-box .welcome-box div h2 {
@@ -350,29 +357,37 @@ header .percents button {
   text-align: center;
   box-shadow: 0 1px 3px #00000069;
 }
-.content-box .aside-box {
-  width: 350px;
+.content-box aside.aside {
+  display: grid;
+  position: relative;
+  grid-gap: 20px;
+  width: 100%;
   height: auto;
-  flex-direction: column;
+  box-sizing: border-box;
+}
+.content-box .aside-box {
+  position: relative;
+  display: grid;
+  height: auto;
+  width: 100%;
   background: #F8F8F8;
-  text-align: center;
-  padding: 8px;
   font-family: 'Museo-sans';
-  margin: 0 0 18px 18px;
+  padding: 30px;
+  justify-items: center;
 }
 .content-box .aside-box h2 {
-  font-size: 27px;
+  max-width: 305px;
+  font-size: 25px;
   font-weight: 900;
   text-align: left;
   margin-top: 8px;
-  padding-left: 22px;
   line-height: 1.2;
+  justify-self: left;
 }
 .content-box .aside-box img {
   width: 100px;
   height: 100px;
   text-align: center;
-  margin: auto;
   margin-top: 2rem;
 }
 .content-box .aside-box button {
@@ -406,4 +421,10 @@ header .percents button {
 .content-box .aside-box .recents {
   text-align: left;
   padding-left: 20px;
+}
+@media only screen and (max-width: 992px) {
+  .content-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
 }
