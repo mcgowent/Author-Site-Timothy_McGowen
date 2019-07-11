@@ -1,24 +1,31 @@
 // ===================================Content-box==========================
 .content-box {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+
     // Global Styles for the content section
     background: @teal; //background color
     .box-shadow(); //Box shadow to push the image and show the layers better
+    box-sizing: border-box;
 
     //This sets up the correct spacing for page 18px;
-    margin-top: 18px;
-    margin-bottom: 18px;
     padding: 18px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 18px auto 0 auto;
     // ===================================Main-box=============================
 
     .main-box {
         //Setting the styles for the main box inside the content-box, this section
         //should only contain the global styles for the box
         .box-shadow();
+        box-sizing: border-box;
         background: @offWhite;
-        width: 596px;
+        width: 100%;
         height: auto;
-        padding: 18px;
+        padding: 20px;
 
         // ===================================HomePage Boxes in order as they appear=============================
 
@@ -40,7 +47,7 @@
 
                 h1 {
                     color: @blue;
-                    font-size: 68px;
+                    font-size: 65px;
                     padding-bottom: 5px;
                 }
 
@@ -141,32 +148,136 @@
         }
     }
 
+    .adjustable-tabs {
+        .chapter-offer-title {
+            .box-shadow();
+            // width: 552px;
+            height: 102.68px;
+            background: @teal;
+
+            margin-bottom: 18px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+
+            h3 {
+                font-size: 39px;
+                font-family: @font;
+                font-weight: 700;
+                margin: 10px;
+            }
+
+            h4 {
+                font-size: 19px;
+                font-family: @font;
+                font-weight: 500;
+
+                margin-top: 5px;
+            }
+        }
+
+        .tabs-body {
+            background: @teal;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .box-shadow();
+
+
+            .tab-column {
+
+                h4 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    height: 73px;
+                    width: 150px;
+                    margin: 18px auto;
+                    background: @offWhite;
+                    border-radius: 8px;
+
+                    font-size: 14px;
+                    text-align: center;
+                    font-family: @font;
+                    font-weight: 700;
+
+                    .box-shadow();
+                }
+
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+
+                    height: 135px;
+                    width: 150px;
+                    margin: 18px auto;
+                    background: @offWhite;
+
+                    padding: 18px;
+                    border-radius: 8px;
+                    font-family: @font;
+                    font-weight: 500;
+
+                    .box-shadow();
+                }
+            }
+        }
+    }
+
+    footer {
+        margin: 20px auto;
+        padding: 10px;
+        background: @teal;
+        color: white;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     // ===================================aside-box============================
+    aside {
+        &.aside {
+            display: grid;
+            position: relative;
+            grid-gap: 20px;
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+        }
+    }
+
     .aside-box {
-        width: 350px;
+        position: relative;
+        display: grid;
         height: auto;
-        flex-direction: column;
+        width: 100%;
         background: @offWhite;
-        text-align: center;
-        padding: 8px;
         font-family: @font;
-        margin: 0 0 18px 18px;
+        padding: 30px;
+        justify-items: center;
 
         h2 {
-            font-size: 27px;
+            max-width: 305px;
+            font-size: 25px;
             font-weight: 900;
             text-align: left;
             margin-top: 8px;
-            padding-left: 22px;
             line-height: 1.2;
-
+            justify-self: left;
         }
 
         img {
             width: 100px;
             height: 100px;
             text-align: center;
-            margin: auto;
             margin-top: 2rem;
         }
 

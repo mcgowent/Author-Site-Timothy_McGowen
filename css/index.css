@@ -89,6 +89,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -139,8 +140,6 @@ html {
   font-size: 62.5%;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1000px;
-  min-width: 1000px;
 }
 .line-break {
   border-bottom: 1px solid #707070;
@@ -148,10 +147,12 @@ html {
   margin-bottom: 18px;
 }
 header {
-  display: flex;
-  flex-direction: column;
+  display: block;
   padding-top: 15rem;
   font-family: 'museo-sans';
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 header h1 {
   color: white;
@@ -249,19 +250,25 @@ header .percents button {
   border: 1px solid white;
 }
 .content-box {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
   background: #315258;
   box-shadow: 0 1px 3px #00000069;
-  margin-top: 18px;
-  margin-bottom: 18px;
+  box-sizing: border-box;
   padding: 18px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 18px auto 0 auto;
 }
 .content-box .main-box {
   box-shadow: 0 1px 3px #00000069;
+  box-sizing: border-box;
   background: #F8F8F8;
-  width: 596px;
+  width: 100%;
   height: auto;
-  padding: 18px;
+  padding: 20px;
 }
 .content-box .main-box .welcome-box {
   display: flex;
@@ -278,7 +285,7 @@ header .percents button {
 }
 .content-box .main-box .welcome-box div h1 {
   color: #2f3359;
-  font-size: 68px;
+  font-size: 65px;
   padding-bottom: 5px;
 }
 .content-box .main-box .welcome-box div h2 {
@@ -350,29 +357,105 @@ header .percents button {
   text-align: center;
   box-shadow: 0 1px 3px #00000069;
 }
-.content-box .aside-box {
-  width: 350px;
-  height: auto;
+.content-box .adjustable-tabs .chapter-offer-title {
+  box-shadow: 0 1px 3px #00000069;
+  height: 102.68px;
+  background: #315258;
+  margin-bottom: 18px;
+  display: flex;
   flex-direction: column;
-  background: #F8F8F8;
-  text-align: center;
-  padding: 8px;
+  align-items: center;
+  color: white;
+}
+.content-box .adjustable-tabs .chapter-offer-title h3 {
+  font-size: 39px;
   font-family: 'Museo-sans';
-  margin: 0 0 18px 18px;
+  font-weight: 700;
+  margin: 10px;
+}
+.content-box .adjustable-tabs .chapter-offer-title h4 {
+  font-size: 19px;
+  font-family: 'Museo-sans';
+  font-weight: 500;
+  margin-top: 5px;
+}
+.content-box .adjustable-tabs .tabs-body {
+  background: #315258;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 0 1px 3px #00000069;
+}
+.content-box .adjustable-tabs .tabs-body .tab-column h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 73px;
+  width: 150px;
+  margin: 18px auto;
+  background: #F8F8F8;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: center;
+  font-family: 'Museo-sans';
+  font-weight: 700;
+  box-shadow: 0 1px 3px #00000069;
+}
+.content-box .adjustable-tabs .tabs-body .tab-column div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 135px;
+  width: 150px;
+  margin: 18px auto;
+  background: #F8F8F8;
+  padding: 18px;
+  border-radius: 8px;
+  font-family: 'Museo-sans';
+  font-weight: 500;
+  box-shadow: 0 1px 3px #00000069;
+}
+.content-box footer {
+  margin: 20px auto;
+  padding: 10px;
+  background: #315258;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-box aside.aside {
+  display: grid;
+  position: relative;
+  grid-gap: 20px;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.content-box .aside-box {
+  position: relative;
+  display: grid;
+  height: auto;
+  width: 100%;
+  background: #F8F8F8;
+  font-family: 'Museo-sans';
+  padding: 30px;
+  justify-items: center;
 }
 .content-box .aside-box h2 {
-  font-size: 27px;
+  max-width: 305px;
+  font-size: 25px;
   font-weight: 900;
   text-align: left;
   margin-top: 8px;
-  padding-left: 22px;
   line-height: 1.2;
+  justify-self: left;
 }
 .content-box .aside-box img {
   width: 100px;
   height: 100px;
   text-align: center;
-  margin: auto;
   margin-top: 2rem;
 }
 .content-box .aside-box button {
@@ -406,4 +489,78 @@ header .percents button {
 .content-box .aside-box .recents {
   text-align: left;
   padding-left: 20px;
+}
+@media only screen and (max-width: 992px) {
+  header .topnav .navbar {
+    background: #333;
+  }
+  header .topnav .navbar button {
+    background: none;
+    color: white;
+    opacity: 1;
+    border: 0;
+    box-shadow: none;
+    font-size: 12pt;
+  }
+  .content-box {
+    background: none;
+    box-shadow: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    max-width: 600px;
+  }
+  .content-box .main-box {
+    border-radius: 5px;
+  }
+  .content-box .main-box .welcome-box {
+    padding: 10px 30px;
+    flex-direction: column;
+  }
+  .content-box .main-box .welcome-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 0 30px 0;
+  }
+  .content-box .main-box .chapter-offer .book-blurb {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: auto;
+  }
+  .content-box .main-box .chapter-offer .book-blurb img {
+    width: 150px;
+  }
+  .content-box .aside-box h2 {
+    justify-self: center;
+  }
+}
+@media only screen and (max-width: 650px) {
+  header .topnav .navbar button {
+    height: 50px;
+  }
+  header .topnav .navbar button:last-child {
+    display: none;
+  }
+  .content-box .main-box .welcome-box {
+    display: grid;
+    justify-items: center;
+    grid-gap: 50px;
+  }
+  .content-box .main-box .chapter-offer .book-blurb {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    grid-gap: 50px;
+    justify-items: center;
+  }
+  .content-box .main-box .chapter-offer .chapter-offer-title {
+    height: auto;
+    padding: 25px;
+  }
+  .content-box .main-box .chapter-offer .chapter-offer-title h2 {
+    margin: 0;
+  }
+  .content-box .main-box .chapter-offer .chapter-offer-title h1 {
+    text-align: center;
+  }
 }
